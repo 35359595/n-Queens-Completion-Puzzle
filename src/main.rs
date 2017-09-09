@@ -132,5 +132,15 @@ fn main() {
             qn.place(&mut b);
         }
     }
+    let mut co = vec![vec!['x'; size as usize]; size as usize];
+    for l in &b.q {
+        co[l.c.x as usize - 1][l.c.y as usize - 1] = 'Q';
+    }
+    for s in co {
+        for z in s {
+            print!("{:?}", z);
+        }
+        print!{"\n"};
+    }
     println!("Total Queens on board {0}x{0} is: {1} ", size, &b.q.len());
 }
