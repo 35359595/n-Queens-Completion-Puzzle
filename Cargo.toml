@@ -1,0 +1,6 @@
+[package]
+name = "queen"
+version = "0.1.0"
+authors = ["ivan.temchenko <ivan.temchenko@yandex.ua>"]
+
+[dependencies]
